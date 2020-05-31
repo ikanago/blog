@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
-import PostLinks from "../components/post-links";
+import PostLinks from "../components/postLinks";
 
 const IndexPage = ({
     data: {
