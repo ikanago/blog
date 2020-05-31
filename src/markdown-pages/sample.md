@@ -7,3 +7,5 @@ title: "Sample"
 # HOGE
 
 hoge
+
+![gatsby-icon](../images/rustacean-orig-noshadow.png)
