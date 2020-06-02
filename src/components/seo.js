@@ -34,6 +34,10 @@ export const SEO = ({ description, lang, meta, title }) => {
             }}
             title={title}
             titleTemplate={`%s | ${site.siteMetadata.title}`}
+            link={[
+                { innerHTML: `<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">` },
+                { innerHTML: `<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">` }
+            ]}
             meta={[
                 {
                     name: `description`,
@@ -73,7 +77,7 @@ export const SEO = ({ description, lang, meta, title }) => {
 };
 
 SEO.defaultProps = {
-    lang: `en`,
+    lang: `ja`,
     meta: [],
     description: ``,
 };

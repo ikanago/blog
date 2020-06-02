@@ -1,10 +1,9 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import { Layout } from "../components/layout";
-import { Image } from "../components/image";
 import { SEO } from "../components/seo";
-import { PostLinks } from "../components/postLinks";
+import { PostLink } from "../components/postLinks";
 import { Outline } from "../components/outline";
 
 const IndexPage = ({
@@ -14,7 +13,7 @@ const IndexPage = ({
 }) => {
     const Posts = edges
         .filter(edge => !!edge.node.frontmatter.date)
-        .map(edge => <PostLinks key={edge.node.id} post={edge.node} />);
+        .map(edge => <li key={edge.id}><PostLink key={edge.id} post={edge.node} /></li>);
 
     return (
         <Layout>
@@ -26,7 +25,13 @@ const IndexPage = ({
             </Outline>
             <div>
                 <h1>Hi people</h1>
-                <div>{Posts}</div>
+                <h2>Articles</h2>
+                <ul>{Posts}</ul>
+                <h2>Works</h2>
+                <ul>
+                    <li><a href="https://github.com/ikanago/ycc">ycc</a></li>
+                    <li><a href="https://github.com/ikanago/prodio">prodio</a></li>
+                </ul>
             </div>
         </Layout>
     );
