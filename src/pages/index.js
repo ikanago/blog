@@ -29,8 +29,8 @@ const IndexPage = ({
                 <ul>{Posts}</ul>
                 <h2>Works</h2>
                 <ul>
-                    <li><a href="https://github.com/ikanago/ycc">ycc</a></li>
-                    <li><a href="https://github.com/ikanago/prodio">prodio</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/ikanago/ycc">ycc</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/ikanago/prodio">prodio</a></li>
                 </ul>
             </div>
         </Layout>
@@ -41,7 +41,10 @@ export default IndexPage;
 
 export const pageQuery = graphql`
     query {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        allMarkdownRemark(
+            filter: {frontmatter: {status: {eq: "published"}}}, 
+            sort: { order: DESC, fields: [frontmatter___date] }
+        ) {
             edges {
                 node {
                     id

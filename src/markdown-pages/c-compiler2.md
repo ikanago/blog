@@ -2,6 +2,7 @@
 slug: "/blog/c-compiler2"
 date: "2019-10-24"
 title: "Cコンパイラを自作する その2"
+status: "published"
 ---
 
 ## お久しぶりです

@@ -2,6 +2,7 @@
 slug: "/blog/participated-icpc"
 date: "2019-07-13"
 title: "ICPC2019国内予選に参加しました"
+status: "published"
 ---
 
 ## はじめに

@@ -2,6 +2,7 @@
 slug: "/blog/became-atcoder-green"
 date: "2019-10-28"
 title: "AtCoderで緑になりました．"
+status: "published"
 ---
 
 ![rate graph](../images/20191028001138.png)
