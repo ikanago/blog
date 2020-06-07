@@ -9,7 +9,7 @@ type Props = {
 
 export const Contact = ({ name, link, size }: Props) => {
     const icon = iconData[name];
-    return (<a href={link} rel="noopener noreferrer">
+    return (<a href={link} target="_blank" rel="noopener noreferrer">
         <svg width={size} height={size} viewBox={icon.viewBox} preserveAspectRatio="xMidYMid">
             <g>
                 <path d={icon.path} fill={icon.fill} />
