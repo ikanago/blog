@@ -1,6 +1,10 @@
 import React from "react"
 
-export const Outline = ({ children }) => (
+type Props = {
+    children: JSX.Element,
+};
+
+export const Outline = ({ children }: Props) => (
     <div style={{
         width: `15rem`,
         float: `left`,

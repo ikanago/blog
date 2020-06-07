@@ -35,8 +35,12 @@ export const SEO = ({ description, lang, meta, title }) => {
             title={title}
             titleTemplate={`%s | ${site.siteMetadata.title}`}
             link={[
-                { innerHTML: `<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">` },
-                { innerHTML: `<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">` }
+                {
+                    innerHTML: `<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">`,
+                },
+                {
+                    innerHTML: `<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">`,
+                },
             ]}
             meta={[
                 {
