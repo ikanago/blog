@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { PostLink } from "../components/postLinks";
-import { Outline } from "../components/outline";
 
 const IndexPage = ({
     data: {
@@ -18,11 +17,6 @@ const IndexPage = ({
     return (
         <Layout>
             <SEO title="Home" />
-            <Outline>
-                <p>biography</p>
-                <p>articles</p>
-                <p>works</p>
-            </Outline>
             <div>
                 <h1>Hi people</h1>
                 <h2>Articles</h2>
