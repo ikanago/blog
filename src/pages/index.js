@@ -1,9 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
 
+import { Biography } from "../components/biography";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { PostLink } from "../components/postLinks";
+import { Image } from "../components/image";
 
 const IndexPage = ({
     data: {
@@ -18,7 +20,7 @@ const IndexPage = ({
         <Layout>
             <SEO title="Home" />
             <div>
-                <h1>Hi people</h1>
+                <Biography/>
                 <h2>Articles</h2>
                 <ul>{Posts}</ul>
                 <h2>Works</h2>
