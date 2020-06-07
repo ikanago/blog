@@ -1,7 +1,6 @@
 import React from "react"
 import Img from "gatsby-image";
-import { Icon } from "./icon";
-import { iconData } from "./iconData";
+import { Contact } from "./Contact";
 import { useStaticQuery, graphql } from "gatsby"
 
 export const Biography = () => {
@@ -32,12 +31,8 @@ export const Biography = () => {
                 Studying computer science at a university.<br />
                 I love Rust 🦀.
             </p>
-            <a href="http://github.com/ikanago" rel="noopener noreferrer">
-                <Icon size="30px" icon={iconData["GitHub"]} />
-            </a>
-            <a href="http://twitter.com/ikanag0" rel="noopener noreferrer">
-                <Icon size="30px" icon={iconData["Twitter"]} />
-            </a>
+            <Contact name="GitHub" link="http://github.com/ikanago" size="30px" />
+            <Contact name="Twitter" link="http://twitter.com/ikanag0" size="30px" />
         </div>
     </div >);
 };
