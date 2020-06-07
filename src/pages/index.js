@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import { Biography } from "../components/biography";
+import { Biography } from "../components/Biography";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { PostLink } from "../components/postLinks";
