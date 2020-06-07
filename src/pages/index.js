@@ -5,7 +5,6 @@ import { Biography } from "../components/biography";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { PostLink } from "../components/postLinks";
-import { Image } from "../components/image";
 
 const IndexPage = ({
     data: {
