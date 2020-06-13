@@ -28,12 +28,7 @@ export const Layout = ({ children }: Props) => {
                     padding: `0 1.0875rem 1.45rem`,
                 }}
             >
-                <main
-                    style={{
-                        display: `flex`,
-                        flexDirection: `row`,
-                    }}
-                >{children}</main>
+                <main>{children}</main>
             </div>
         </>
     );

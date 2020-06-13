@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import { Biography } from "../components/Biography";
+import { Works } from "../components/Works";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { PostLink } from "../components/postLinks";
@@ -41,11 +42,7 @@ const IndexPage = ({
                     <Biography />
                     <h2>Articles</h2>
                     <ul>{Posts}</ul>
-                    <h2>Works</h2>
-                    <ul>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/ikanago/ycc">ycc</a></li>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/ikanago/prodio">prodio</a></li>
-                    </ul>
+                    <Works />
                 </div>
             </>
         </Layout>
