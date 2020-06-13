@@ -1,12 +1,11 @@
 import React from "react";
 import { WorkCard } from "./WorkCard";
+import { worksList } from "./worksList";
 import styles from "./works.module.css";
 
-export const Works = () => (
-    <div className={styles.works}>
-        <WorkCard title="ycc" description="hoge" />
-        <WorkCard title="ycc" description="hoge" />
-        <WorkCard title="ycc" description="hoge" />
-        <WorkCard title="ycc" description="hoge" />
-    </div>
-);
+export const Works = () => {
+    const works = worksList.map(work => (<WorkCard title={work.title} description={work.description} />));
+    return (<div className={styles.works}>
+        {works}
+    </div>);
+};

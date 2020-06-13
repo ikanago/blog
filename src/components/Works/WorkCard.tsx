@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./works.module.css";
+const styles = require("./works.module.css");
 
 type Props = {
     title: string,
@@ -8,7 +8,7 @@ type Props = {
 
 export const WorkCard = ({ title, description }: Props) => {
     return (<div className={styles.workcard}>
-        <p className={styles.title}>title</p>
-        <p>description</p>
+        <p className={styles.title}>{title}</p>
+        <p>{description}</p>
     </div>);
 }
