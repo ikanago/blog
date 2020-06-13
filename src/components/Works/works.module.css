@@ -8,11 +8,14 @@
 .workcard {
     border: 0.1rem solid #d1d5da;
     border-radius: 0.3rem;
-    margin: 0 1rem 2rem 0;
-    padding: 0.5rem;
+    margin: 1rem 1rem;
+    padding: 1rem 1.5rem;
     width: 45%;
+    height: 12rem;
+    text-align: center;
 }
 
 .title {
     font-size: 150%;
+    text-decoration: none;
 }
