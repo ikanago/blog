@@ -3,11 +3,16 @@ import { Card, CardContent } from "./Card";
 const styles = require("./container.module.css");
 
 type Props = {
+    backgroundColor: string;
     sectionName: string;
     contents: CardContent[];
 };
 
-export const Container = ({ sectionName, contents }: Props) => {
+export const Container = ({
+    backgroundColor,
+    sectionName,
+    contents,
+}: Props) => {
     const cards = contents.map(content => (
         <Card
             title={content.title}
@@ -17,7 +22,10 @@ export const Container = ({ sectionName, contents }: Props) => {
         />
     ));
     return (
-        <div className={styles.container}>
+        <div
+            className={styles.container}
+            style={{ backgroundColor: backgroundColor }}
+        >
             <h2 className={styles.section_name}>{sectionName}</h2>
             <div className={styles.cards}>{cards}</div>
         </div>

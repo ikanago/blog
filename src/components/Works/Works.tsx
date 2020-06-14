@@ -10,5 +10,11 @@ export const Works = () => {
             description: work.description,
         };
     });
-    return <Container sectionName="Works" contents={works} />;
+    return (
+        <Container
+            backgroundColor="#9fd356"
+            sectionName="Works"
+            contents={works}
+        />
+    );
 };

@@ -1,4 +1,5 @@
 .container {
+    /* background-color: #4e8ce0; */
     padding: 3rem 0rem;
     width: auto;
 }
@@ -14,6 +15,7 @@
 }
 
 .card {
+    background-color: white;
     border: 0.1rem solid #d1d5da;
     border-radius: 0.3rem;
     margin: 1rem 5%;

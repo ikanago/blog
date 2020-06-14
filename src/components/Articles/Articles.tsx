@@ -55,5 +55,11 @@ export const Articles = () => {
                 link: post.node.frontmatter.slug,
             };
         });
-    return <Container sectionName="Articles" contents={posts} />;
+    return (
+        <Container
+            backgroundColor="#3c91e6"
+            sectionName="Articles"
+            contents={posts}
+        />
+    );
 };
