@@ -26,8 +26,8 @@ export const Biography = () => {
                 <h1>ikanago</h1>
                 <p>
                     Studying computer science at a university.<br />
-                I love Rust 🦀.
-            </p>
+                    I love Rust 🦀.
+                </p>
                 <Contact name="GitHub" link="http://github.com/ikanago" size="30px" />
                 <Contact name="Twitter" link="http://twitter.com/ikanag0" size="30px" />
             </div>

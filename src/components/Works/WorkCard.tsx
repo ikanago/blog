@@ -8,10 +8,12 @@ type Props = {
 }
 
 export const WorkCard = ({ title, url, description }: Props) => {
-    return (<div className={styles.workcard}>
-        <a className={styles.title} href={url} target="_blank" rel="noopener noreferrer">
-            <p>{title}</p>
-        </a>
-        <p>{description}</p>
-    </div>);
+    return (
+        <div className={styles.workcard}>
+            <a className={styles.title} href={url} target="_blank" rel="noopener noreferrer">
+                <p>{title}</p>
+            </a>
+            <p>{description}</p>
+        </div>
+    );
 }
