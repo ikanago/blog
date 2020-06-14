@@ -1,0 +1,9 @@
+.biography_container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+}
+
+.biography {
+    margin: 1rem 0 0 1rem;
+}
