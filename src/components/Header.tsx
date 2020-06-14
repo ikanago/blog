@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 type Props = {
-    siteTitle: string,
+    siteTitle: string;
 };
 
 export const Header = ({ siteTitle }: Props) => (

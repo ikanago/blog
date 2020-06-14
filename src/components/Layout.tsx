@@ -4,7 +4,7 @@ import { Header } from "./Header";
 import "./layout.css";
 
 type Props = {
-    children: JSX.Element,
+    children: JSX.Element;
 };
 
 export const Layout = ({ children }: Props) => {
@@ -21,10 +21,7 @@ export const Layout = ({ children }: Props) => {
     return (
         <>
             <Header siteTitle={data.site.siteMetadata.title} />
-            <div
-                style={{
-                }}
-            >
+            <div style={{}}>
                 <main>{children}</main>
             </div>
         </>

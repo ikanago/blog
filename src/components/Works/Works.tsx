@@ -7,10 +7,8 @@ export const Works = () => {
         return {
             title: work.title,
             link: work.url,
-            description: work.description
+            description: work.description,
         };
     });
-    return (
-        <Container sectionName="Works" contents={works} />
-    );
+    return <Container sectionName="Works" contents={works} />;
 };

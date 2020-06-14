@@ -1,31 +1,33 @@
-import React from "react"
+import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { Container } from "../Container";
 const styles = require("./articles.module.css");
 
 type Query = {
     allMarkdownRemark: {
-        edges: [{
-            node: Post,
-        }],
-    },
+        edges: [
+            {
+                node: Post;
+            }
+        ];
+    };
 };
 
 type Post = {
-    id: string,
-    excerpt: string,
+    id: string;
+    excerpt: string;
     frontmatter: {
-        slug: string,
-        title: string,
-        date: string,
-    },
+        slug: string;
+        title: string;
+        date: string;
+    };
 };
 
 export const Articles = () => {
     const data: Query = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
-                filter: {frontmatter: {status: {eq: "published"}}}, 
+                filter: { frontmatter: { status: { eq: "published" } } }
                 sort: { order: DESC, fields: [frontmatter___date] }
             ) {
                 edges {
@@ -48,12 +50,10 @@ export const Articles = () => {
         .filter(edge => !!edge.node.frontmatter.date)
         .map(post => {
             return {
-                "title": post.node.frontmatter.title,
-                "date": post.node.frontmatter.date,
-                "link": post.node.frontmatter.slug,
+                title: post.node.frontmatter.title,
+                date: post.node.frontmatter.date,
+                link: post.node.frontmatter.slug,
             };
         });
-    return (
-        <Container sectionName="Articles" contents={posts} />
-    );
+    return <Container sectionName="Articles" contents={posts} />;
 };

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 const styles = require("./container.module.css");
 
 export type CardContent = {
@@ -19,9 +19,16 @@ export const Card = (content: CardContent) => {
         date = <p>{content.date}</p>;
     }
     if (content.link !== undefined) {
-        title = (<a className={styles.title} href={content.link} target="_blank" rel="noopener noreferrer">
-            {title}
-        </a>);
+        title = (
+            <a
+                className={styles.title}
+                href={content.link}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                {title}
+            </a>
+        );
     }
 
     return (
@@ -33,4 +40,4 @@ export const Card = (content: CardContent) => {
             </>
         </div>
     );
-}
+};
