@@ -17,11 +17,11 @@ export const Container = ({sectionName, contents}: Props) => {
         />
     );
     return (
-        <>
-            <h2>{sectionName}</h2>
+        <div className={styles.container}>
+            <h2 className={styles.section_name}>{sectionName}</h2>
             <div className={styles.cards}>
                 {cards}
             </div>
-        </>
+        </div>
     );
 };

@@ -1,16 +1,24 @@
+.container {
+    padding: 3rem 0rem;
+    width: auto;
+}
+
+.section_name {
+    text-align: center;
+}
+
 .cards {
     display: flex !important;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    padding: 0 2rem;
+    margin: 0 10%;
 }
 
 .card {
     border: 0.1rem solid #d1d5da;
     border-radius: 0.3rem;
-    margin: 1rem 1rem;
+    margin: 1rem 5%;
     padding: 1rem 1.5rem;
-    width: 45%;
+    width: 40%;
     height: 12rem;
     text-align: center;
 }

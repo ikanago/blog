@@ -23,7 +23,6 @@ export const Layout = ({ children }: Props) => {
             <Header siteTitle={data.site.siteMetadata.title} />
             <div
                 style={{
-                    padding: `0 1.0875rem 1.45rem`,
                 }}
             >
                 <main>{children}</main>
