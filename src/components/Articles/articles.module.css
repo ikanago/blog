@@ -1,3 +1,7 @@
+.article_container {
+    text-align: center;
+}
+
 .articles {
     display: flex !important;
     flex-wrap: wrap;

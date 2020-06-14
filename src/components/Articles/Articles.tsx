@@ -1,14 +1,14 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import { ArticleCard } from "./ArticleCard";
 const styles = require("./articles.module.css");
 
-type Props = {
-        allMarkdownRemark: {
-            edges: [{
-                node: Post,
-            }],
-        },
+type Query = {
+    allMarkdownRemark: {
+        edges: [{
+            node: Post,
+        }],
+    },
 };
 
 type Post = {
@@ -22,8 +22,7 @@ type Post = {
 };
 
 export const Articles = () => {
-    return <StaticQuery
-        query={graphql`
+    const data: Query = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
                 filter: {frontmatter: {status: {eq: "published"}}}, 
@@ -42,12 +41,17 @@ export const Articles = () => {
                 }
             }
         }
-    `}
-        render={(data: Props) => {
-            const { edges } = data.allMarkdownRemark;
-            const Posts = edges
-                .filter(edge => !!edge.node.frontmatter.date)
-                .map(post => <ArticleCard slug={post.node.frontmatter.slug} title={post.node.frontmatter.title} date={post.node.frontmatter.date} />);
-            return <div className={styles.articles}>{Posts}</div>
-        }} />;
+    `);
+
+    const { edges } = data.allMarkdownRemark;
+    const Posts = edges
+        .filter(edge => !!edge.node.frontmatter.date)
+        .map(post => <ArticleCard slug={post.node.frontmatter.slug} title={post.node.frontmatter.title} date={post.node.frontmatter.date} />);
+    return (
+        <div className={styles.article_container}>
+            <h2>Articles</h2>
+            <div className={styles.articles}>{Posts}
+            </div>
+        </div>
+    );
 };
