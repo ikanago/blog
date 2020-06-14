@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby";
-import { ArticleCard } from "./ArticleCard";
+import { Container } from "../Container";
 const styles = require("./articles.module.css");
 
 type Query = {
@@ -44,14 +44,16 @@ export const Articles = () => {
     `);
 
     const { edges } = data.allMarkdownRemark;
-    const Posts = edges
+    const posts = edges
         .filter(edge => !!edge.node.frontmatter.date)
-        .map(post => <ArticleCard slug={post.node.frontmatter.slug} title={post.node.frontmatter.title} date={post.node.frontmatter.date} />);
+        .map(post => {
+            return {
+                "title": post.node.frontmatter.title,
+                "date": post.node.frontmatter.date,
+                "link": post.node.frontmatter.slug,
+            };
+        });
     return (
-        <div className={styles.article_container}>
-            <h2>Articles</h2>
-            <div className={styles.articles}>{Posts}
-            </div>
-        </div>
+        <Container sectionName="Articles" contents={posts} />
     );
 };
