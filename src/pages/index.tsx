@@ -2,7 +2,7 @@ import React from "react";
 
 import { Biography } from "../components/Biography";
 import { Works } from "../components/Works";
-import { Layout } from "../components/layout";
+import { Layout } from "../components/Layout";
 import { SEO } from "../components/seo";
 import { Articles } from "../components/Articles";
 
