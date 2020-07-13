@@ -33,7 +33,7 @@ export const Articles = () => {
                 edges {
                     node {
                         id
-                        excerpt(pruneLength: 250)
+                        excerpt(pruneLength: 80)
                         frontmatter {
                             date(formatString: "YYYY MMMM DD")
                             slug
@@ -51,6 +51,7 @@ export const Articles = () => {
         .map(post => {
             return {
                 title: post.node.frontmatter.title,
+                description: post.node.excerpt,
                 date: post.node.frontmatter.date,
                 link: post.node.frontmatter.slug,
             };

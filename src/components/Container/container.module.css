@@ -6,7 +6,7 @@
 
 .section_name {
     text-align: center;
-    text-decoration: underline #9fd356;
+    text-decoration: underline #2cad27;
     font-size: 4rem;
 }
 
@@ -19,7 +19,7 @@
 .card {
     background-color: white;
     border: 0.1rem solid #d1d5da;
-    border-radius: 0.3rem;
+    border-radius: 0.4rem;
     margin: 1rem 5%;
     padding: 1rem 1.5rem;
     width: 40%;
@@ -28,5 +28,23 @@
 }
 
 .title {
-    text-decoration: none;
+    text-decoration: underline #2cad27;
+    text-decoration-thickness: 0.15rem;
+    color: #323232
 }
+/* 
+.title:link {
+    color: #2cad27;
+}
+
+.title:visited {
+    color: #2cad27;
+}
+
+.title:hover {
+    color: #2cad27;
+}
+
+.title:active {
+    color: #2cad27;
+} */
