@@ -2,6 +2,7 @@
 slug: "/blog/c-compiler1"
 date: "2019-06-27"
 title: "Cコンパイラを自作する その1"
+tags: ["C", "compiler"]
 status: "published"
 ---
 

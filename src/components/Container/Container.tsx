@@ -17,6 +17,7 @@ export const Container = ({
         <Card
             title={content.title}
             description={content.description}
+            tags={content.tags}
             date={content.date}
             link={content.link}
         />

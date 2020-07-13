@@ -7,6 +7,7 @@ export const Works = () => {
         return {
             title: work.title,
             link: work.url,
+            tags: work.tags,
             description: work.description,
         };
     });

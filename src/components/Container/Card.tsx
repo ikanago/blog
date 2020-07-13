@@ -1,40 +1,45 @@
 import React from "react";
+import { Tag, TagName } from "./Tag"
 const styles = require("./container.module.css");
 
 export type CardContent = {
     title: string;
-    description?: string;
+    tags: string[];
+    description: string;
     date?: string;
-    link?: string;
+    link: string;
 };
 
 export const Card = (content: CardContent) => {
-    let title = <h2>{content.title}</h2>;
-    let description = <></>;
+    const title = (
+        <a
+            className={styles.title}
+            href={content.link}
+            target="_blank"
+            rel="noopener noreferrer"
+        ><h2>
+                {content.title}
+            </h2>
+        </a>
+    );
+    const tags = <div style={{
+        display: `flex`,
+        flexWrap: `wrap`
+    }}>
+        {content.tags.map(tag_name => <Tag tag_name={tag_name} />)}
+    </div>;
+    const description = <p>{content.description}</p>;
     let date = <></>;
-    if (content.description !== undefined) {
-        description = <p>{content.description}</p>;
-    }
     if (content.date !== undefined) {
         date = <p>{content.date}</p>;
     }
-    if (content.link !== undefined) {
-        title = (
-            <a
-                className={styles.title}
-                href={content.link}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                {title}
-            </a>
-        );
-    }
+
 
     return (
         <div className={styles.card}>
             <>
                 {title}
+                {tags}
                 {description}
                 {date}
             </>

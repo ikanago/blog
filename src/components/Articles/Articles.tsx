@@ -19,6 +19,7 @@ type Post = {
     frontmatter: {
         slug: string;
         title: string;
+        tags: string[];
         date: string;
     };
 };
@@ -37,6 +38,7 @@ export const Articles = () => {
                         frontmatter {
                             date(formatString: "YYYY MMMM DD")
                             slug
+                            tags
                             title
                         }
                     }
@@ -52,6 +54,7 @@ export const Articles = () => {
             return {
                 title: post.node.frontmatter.title,
                 description: post.node.excerpt,
+                tags: post.node.frontmatter.tags,
                 date: post.node.frontmatter.date,
                 link: post.node.frontmatter.slug,
             };

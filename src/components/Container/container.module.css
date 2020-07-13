@@ -32,19 +32,11 @@
     text-decoration-thickness: 0.15rem;
     color: #323232
 }
-/* 
-.title:link {
-    color: #2cad27;
-}
 
-.title:visited {
-    color: #2cad27;
+.tag {
+    font-family: monospace;
+    margin: 0 0.3rem;
+    padding: 0.2rem;
+    border: 0.1rem solid #2cad27;
+    border-radius: 0.2rem;
 }
-
-.title:hover {
-    color: #2cad27;
-}
-
-.title:active {
-    color: #2cad27;
-} */
