@@ -57,7 +57,7 @@ export const Articles = () => {
         });
     return (
         <Container
-            backgroundColor="#3c91e6"
+            backgroundColor="#F6F6F6"
             sectionName="Articles"
             contents={posts}
         />

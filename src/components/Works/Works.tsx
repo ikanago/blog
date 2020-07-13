@@ -12,7 +12,7 @@ export const Works = () => {
     });
     return (
         <Container
-            backgroundColor="#9fd356"
+            backgroundColor="#F6F6F6"
             sectionName="Works"
             contents={works}
         />

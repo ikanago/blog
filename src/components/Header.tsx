@@ -9,7 +9,6 @@ export const Header = ({ siteTitle }: Props) => (
     <header
         style={{
             background: `#4e8ce0`,
-            marginBottom: `1.45rem`,
         }}
     >
         <div
@@ -23,6 +22,7 @@ export const Header = ({ siteTitle }: Props) => (
                 <Link
                     to="/"
                     style={{
+                        fontFamily: `monospace`,
                         color: `white`,
                         textDecoration: `none`,
                     }}

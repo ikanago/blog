@@ -6,6 +6,8 @@
 
 .section_name {
     text-align: center;
+    text-decoration: underline #9fd356;
+    font-size: 4rem;
 }
 
 .cards {
