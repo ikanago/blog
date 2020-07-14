@@ -23,12 +23,12 @@ export const Container = ({
         />
     ));
     return (
-        <div
+        <section
             className={styles.container}
             style={{ backgroundColor: backgroundColor }}
         >
             <h2 className={styles.section_name}>{sectionName}</h2>
             <div className={styles.cards}>{cards}</div>
-        </div>
+        </section>
     );
 };

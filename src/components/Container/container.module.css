@@ -1,7 +1,6 @@
 .container {
-    /* background-color: #4e8ce0; */
-    padding: 3rem 0rem;
-    width: auto;
+    padding: 3rem 6rem;
+    width: 100%;
 }
 
 .section_name {
@@ -13,16 +12,17 @@
 .cards {
     display: flex !important;
     flex-wrap: wrap;
-    margin: 0 10%;
+    justify-content: space-between;
+    padding: 0 3rem;
 }
 
 .card {
     background-color: white;
     border: 0.1rem solid #d1d5da;
     border-radius: 1rem;
-    margin: 1rem 5%;
+    margin: 1.5rem;
     padding: 1rem 2rem;
-    width: 40%;
+    width: 45%;
     height: 12rem;
 }
 
