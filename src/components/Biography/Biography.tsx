@@ -24,8 +24,7 @@ export const Biography = () => {
             <div className={styles.biography}>
                 <h1>ikanago</h1>
                 <p>
-                    Studying computer science at a university.
-                    <br />I love Rust 🦀.
+                    Studying computer science at a university. I love Rust 🦀.
                 </p>
                 {badgeData.data.map(data => (
                     <Badge

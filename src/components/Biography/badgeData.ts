@@ -11,22 +11,28 @@ export type badge = {
 export const badgeData: Props = {
     data: [
         {
-            link: "http://github.com/ikanago",
+            link: "https://github.com/ikanago",
             badgeLink:
                 "https://img.shields.io/badge/GitHub-ikanago-brightgreen?style=flat&logo=github",
             title: "ikanago",
         },
         {
-            link: "http://twitter.com/ikanag0",
+            link: "https://twitter.com/ikanag0",
             badgeLink:
                 "https://img.shields.io/badge/Twitter-ikanag0-1A91DA?style=flat&logo=twitter",
             title: "ikanag0",
         },
         {
-            link: "http://github.com/ikanago",
+            link: "https://atcoder.jp/users/ikanago",
             badgeLink:
                 "https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fikanago",
             title: "ikanago",
+        },
+        {
+            link: "https://ejje.weblio.jp/content/struggle",
+            badgeLink:
+                "https://img.shields.io/badge/Always-struggling-red?style=flat",
+            title: "😵",
         },
     ],
 };

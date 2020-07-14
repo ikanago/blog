@@ -2,14 +2,14 @@ import React from "react";
 import { badgeData, badge } from "./badgeData";
 const styles = require("./biography.module.css");
 
-export const Badge = ({ link, badgeLink, title }: badge) => (
+export const Badge = (badge: badge) => (
     <a
-        href={link}
+        href={badge.link}
         target="_blank"
         rel="noopener noreferrer"
-        title={title}
+        title={badge.title}
         className={styles.badge}
     >
-        <img src={badgeLink} />
+        <img src={badge.badgeLink} />
     </a>
 );
