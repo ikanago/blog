@@ -31,6 +31,7 @@ export const Biography = () => {
                         link={data.link}
                         badgeLink={data.badgeLink}
                         title={data.title}
+                        alt={data.alt}
                     />
                 ))}
             </div>

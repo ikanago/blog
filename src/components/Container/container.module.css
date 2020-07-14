@@ -41,7 +41,8 @@
 }
 
 .tag {
-    font-family: monospace;
+    font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+        "Liberation Mono", Menlo, Courier, monospace;
     margin: 0 0.3rem;
     padding: 0.2rem;
     border: 0.12rem solid #2cad27;
@@ -49,7 +50,7 @@
 }
 
 .date {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.6);
     text-align: center;
 }
 

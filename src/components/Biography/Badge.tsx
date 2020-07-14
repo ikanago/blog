@@ -10,6 +10,6 @@ export const Badge = (badge: badge) => (
         title={badge.title}
         className={styles.badge}
     >
-        <img src={badge.badgeLink} />
+        <img src={badge.badgeLink} alt={badge.alt} />
     </a>
 );

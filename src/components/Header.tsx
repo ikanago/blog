@@ -22,7 +22,8 @@ export const Header = ({ siteTitle }: Props) => (
                 <Link
                     to="/"
                     style={{
-                        fontFamily: `monospace`,
+                        fontFamily: `"SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+                        "Liberation Mono", Menlo, Courier, monospace`,
                         color: `white`,
                         textDecoration: `none`,
                     }}
