@@ -10,7 +10,7 @@
 }
 
 .cards {
-    display: flex !important;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 3rem;
@@ -23,7 +23,7 @@
     margin: 1.5rem;
     padding: 1rem 2rem;
     width: 45%;
-    height: 12rem;
+    height: 14rem;
 }
 
 .title {
@@ -51,4 +51,19 @@
 .date {
     color: rgba(0, 0, 0, 0.4);
     text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .cards {
+        display: flex;
+        padding: 0 2rem;
+    }
+
+    .card {
+        width: 100%;
+    }
 }

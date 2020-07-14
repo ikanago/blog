@@ -8,3 +8,15 @@
 .biography {
     margin: 1rem 0 0 1rem;
 }
+
+@media screen and (max-width: 480px) {
+    .biography_container {
+        display: block;
+        background-color: #f6f6f6;
+        padding: 2rem;
+    }
+
+    .biography {
+        margin: 1rem 0 0 1rem;
+    }
+}
