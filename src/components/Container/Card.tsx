@@ -1,5 +1,5 @@
 import React from "react";
-import { Tag, TagName } from "./Tag";
+import { Tag } from "./Tag";
 const styles = require("./container.module.css");
 
 export type CardContent = {

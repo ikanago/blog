@@ -8,7 +8,7 @@ type Props = {
 export const Header = ({ siteTitle }: Props) => (
     <header
         style={{
-            background: `#4e8ce0`,
+            background: `#2cad27`,
         }}
     >
         <div

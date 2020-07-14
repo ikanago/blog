@@ -19,18 +19,18 @@
 .card {
     background-color: white;
     border: 0.1rem solid #d1d5da;
-    border-radius: 0.4rem;
+    border-radius: 1rem;
     margin: 1rem 5%;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     width: 40%;
     height: 12rem;
-    text-align: center;
 }
 
 .title {
     margin-bottom: 0.2rem;
     text-decoration: none;
     color: #323232;
+    text-align: center;
 }
 
 .tags {
@@ -44,11 +44,11 @@
     font-family: monospace;
     margin: 0 0.3rem;
     padding: 0.2rem;
-    /* background-color: #49e244; */
-    border: 0.1rem solid #2cad27;
-    border-radius: 0.2rem;
+    border: 0.12rem solid #2cad27;
+    border-radius: 0.3rem;
 }
 
 .date {
     color: rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
