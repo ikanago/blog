@@ -10,7 +10,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <>
-                <SEO title="Home" />
+                <SEO title="ikanago's blog" />
                 <div>
                     <Biography />
                     <Articles />

@@ -3,7 +3,7 @@ module.exports = {
         title: `ikanago's blog`,
         description: `ikanago's portfolio and blog.`,
         author: `@ikanag0`,
-        logo: `src/images/assets/blog_icon.png`
+        logo: `https://pbs.twimg.com/profile_images/1247719027687837696/XObRKZWI_400x400.jpg`,
     },
     plugins: [
         {
@@ -43,7 +43,7 @@ module.exports = {
                 name: `gatsby-starter-default`,
                 short_name: `starter`,
                 start_url: `/`,
-                background_color: `#663399`,
+                background_color: `#2cad27`,
                 theme_color: `#2cad27`,
                 display: `minimal-ui`,
                 icon: `src/images/assets/blog_icon.png`, // This path is relative to the root of the site.

@@ -80,6 +80,10 @@ export const SEO = ({ description, lang, meta, title }) => {
                     name: `twitter:description`,
                     content: metaDescription,
                 },
+                {
+                    property: `twitter:image`,
+                    content: site.siteMetadata.logo,
+                },
             ].concat(meta)}
         />
     );
