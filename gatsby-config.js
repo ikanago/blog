@@ -1,8 +1,9 @@
 module.exports = {
     siteMetadata: {
         title: `ikanago's blog`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+        description: `ikanago's portfolio and blog.`,
         author: `@ikanag0`,
+        logo: `src/images/assets/blog_icon.png`
     },
     plugins: [
         {
@@ -43,9 +44,9 @@ module.exports = {
                 short_name: `starter`,
                 start_url: `/`,
                 background_color: `#663399`,
-                theme_color: `#663399`,
+                theme_color: `#2cad27`,
                 display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+                icon: `src/images/assets/blog_icon.png`, // This path is relative to the root of the site.
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality

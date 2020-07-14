@@ -19,6 +19,7 @@ export const SEO = ({ description, lang, meta, title }) => {
                         title
                         description
                         author
+                        logo
                     }
                 }
             }
@@ -58,6 +59,10 @@ export const SEO = ({ description, lang, meta, title }) => {
                 {
                     property: `og:type`,
                     content: `website`,
+                },
+                {
+                    property: `og:image`,
+                    content: site.siteMetadata.logo,
                 },
                 {
                     name: `twitter:card`,
