@@ -28,15 +28,27 @@
 }
 
 .title {
-    text-decoration: underline #2cad27;
-    text-decoration-thickness: 0.15rem;
-    color: #323232
+    margin-bottom: 0.2rem;
+    text-decoration: none;
+    color: #323232;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0.5rem;
 }
 
 .tag {
     font-family: monospace;
     margin: 0 0.3rem;
     padding: 0.2rem;
+    /* background-color: #49e244; */
     border: 0.1rem solid #2cad27;
     border-radius: 0.2rem;
+}
+
+.date {
+    color: rgba(0, 0, 0, 0.4);
 }

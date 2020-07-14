@@ -6,7 +6,5 @@ export type TagName = {
 };
 
 export const Tag = ({ tag_name }: TagName) => (
-    <div className={styles.tag}>
-        {tag_name}
-    </div>
+    <div className={styles.tag}>{tag_name}</div>
 );
