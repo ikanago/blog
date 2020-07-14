@@ -19,7 +19,9 @@ export const Biography = () => {
 
     return (
         <div className={styles.biography_container}>
-            <Img fixed={data.icon.childImageSharp.fixed} />
+            <Img fixed={data.icon.childImageSharp.fixed} style={{
+                // margin: `0 auto`,
+            }} />
             <div className={styles.biography}>
                 <h1>ikanago</h1>
                 <p>
