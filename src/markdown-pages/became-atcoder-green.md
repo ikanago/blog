@@ -1,6 +1,7 @@
 ---
 slug: "/blog/became-atcoder-green"
-date: "2019-10-28"
+createdAt: "2019-10-28"
+updatedAt: "2019-10-28"
 title: "AtCoderで緑になりました"
 tags: ["comp-prog"]
 status: "published"

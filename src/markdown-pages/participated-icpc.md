@@ -1,6 +1,7 @@
 ---
 slug: "/blog/participated-icpc"
-date: "2019-07-13"
+createdAt: "2019-07-13"
+updatedAt: "2019-07-13"
 title: "ICPC2019国内予選に参加しました"
 tags: ["comp-prog"]
 status: "published"

@@ -15,7 +15,10 @@ export default function Template({
                 <SEO title={frontmatter.title} />
                 <div className={styles.blogPostContainer}>
                     <h1>{frontmatter.title}</h1>
-                    <h2>{frontmatter.date}</h2>
+                    <h4 className={styles.date}>
+                        Created at {frontmatter.createdAt}, Updated at{" "}
+                        {frontmatter.updatedAt}
+                    </h4>
                     <div className={styles.blogPost}>
                         <div dangerouslySetInnerHTML={{ __html: html }} />
                     </div>
@@ -30,7 +33,8 @@ export const pageQuery = graphql`
         markdownRemark(frontmatter: { slug: { eq: $slug } }) {
             html
             frontmatter {
-                date(formatString: "MMMM DD, YYYY")
+                createdAt(formatString: "YYYY MMMM DD")
+                updatedAt(formatString: "YYYY MMMM DD")
                 slug
                 title
             }

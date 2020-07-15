@@ -20,7 +20,7 @@ type Post = {
         slug: string;
         title: string;
         tags: string[];
-        date: string;
+        createdAt: string;
     };
 };
 
@@ -29,14 +29,14 @@ export const Articles = () => {
         query {
             allMarkdownRemark(
                 filter: { frontmatter: { status: { eq: "published" } } }
-                sort: { order: DESC, fields: [frontmatter___date] }
+                sort: { order: DESC, fields: [frontmatter___createdAt] }
             ) {
                 edges {
                     node {
                         id
                         excerpt(pruneLength: 80)
                         frontmatter {
-                            date(formatString: "YYYY MMMM DD")
+                            createdAt(formatString: "YYYY MMMM DD")
                             slug
                             tags
                             title
@@ -49,13 +49,13 @@ export const Articles = () => {
 
     const { edges } = data.allMarkdownRemark;
     const posts = edges
-        .filter(edge => !!edge.node.frontmatter.date)
+        .filter(edge => !!edge.node.frontmatter.createdAt)
         .map(post => {
             return {
                 title: post.node.frontmatter.title,
                 description: post.node.excerpt,
                 tags: post.node.frontmatter.tags,
-                date: post.node.frontmatter.date,
+                date: post.node.frontmatter.createdAt,
                 link: post.node.frontmatter.slug,
             };
         });

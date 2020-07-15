@@ -1,6 +1,7 @@
 ---
 slug: "/blog/c-compiler2"
-date: "2019-10-24"
+createdAt: "2019-10-24"
+updatedAt: "2019-10-24"
 title: "Cコンパイラを自作する その2"
 tags: ["C", "compiler"]
 status: "published"
