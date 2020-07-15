@@ -1,0 +1,15 @@
+.blogPostContainer {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 3rem 0;
+}
+
+.blogPost h2 {
+    margin: 1rem 0;
+    border-bottom: 0.1rem solid #2cad27;
+}
+
+.blogPost p {
+    padding-left: 1rem;
+}
