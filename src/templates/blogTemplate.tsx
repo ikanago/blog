@@ -13,7 +13,7 @@ export default function Template({
         <Layout>
             <>
                 <SEO title={frontmatter.title} />
-                <div className={styles.blogPostContainer}>
+                <article className={styles.blogPostContainer}>
                     <h1>{frontmatter.title}</h1>
                     <h4 className={styles.date}>
                         Created at {frontmatter.createdAt}, Updated at{" "}
@@ -22,7 +22,7 @@ export default function Template({
                     <div className={styles.blogPost}>
                         <div dangerouslySetInnerHTML={{ __html: html }} />
                     </div>
-                </div>
+                </article>
             </>
         </Layout>
     );
