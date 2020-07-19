@@ -3,6 +3,7 @@ slug: "/blog/nitic_ctf_writeup"
 createdAt: 2020-07-19
 updatedAt: 2020-07-19
 title: "NICIT CTF Writeup"
+tags: ["CTF"]
 status: "published"
 ---
 
