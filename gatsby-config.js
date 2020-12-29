@@ -3,7 +3,7 @@ module.exports = {
         title: `ikanago's blog`,
         description: `ikanago's portfolio and blog.`,
         author: `@ikanag0`,
-        logo: `https://pbs.twimg.com/profile_images/1247719027687837696/XObRKZWI_400x400.jpg`,
+        logo: `https://pbs.twimg.com/profile_images/1332579432939208704/1lgun5HA_400x400.jpg`,
     },
     plugins: [
         {
