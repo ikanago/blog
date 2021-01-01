@@ -6,8 +6,13 @@
 }
 
 .date {
+    margin-bottom: 0.5rem;
     text-align: right;
     opacity: 0.7;
+}
+
+.blogPost {
+    margin-top: 2rem;
 }
 
 .blogPost h2 {

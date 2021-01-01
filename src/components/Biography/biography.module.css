@@ -10,6 +10,10 @@
     margin: 1rem;
 }
 
+.description {
+    margin: 0.5rem 0.3rem;
+}
+
 .badge {
     margin: 0 0.3rem;
 }

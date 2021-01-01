@@ -16,8 +16,10 @@ export default function Template({
                 <article className={styles.blogPostContainer}>
                     <h1>{frontmatter.title}</h1>
                     <h4 className={styles.date}>
-                        Created at {frontmatter.createdAt}, Updated at{" "}
-                        {frontmatter.updatedAt}
+                        Created at {frontmatter.createdAt}
+                    </h4>
+                    <h4 className={styles.date}>
+                        Updated at {frontmatter.updatedAt}
                     </h4>
                     <div className={styles.blogPost}>
                         <div dangerouslySetInnerHTML={{ __html: html }} />

@@ -23,7 +23,7 @@ export const Biography = () => {
             <Img fixed={data.icon.childImageSharp.fixed} />
             <div className={styles.biography}>
                 <h1>ikanago</h1>
-                <p>
+                <p className={styles.description}>
                     Studying computer science at a university. I love Rust 🦀.
                 </p>
                 {badgeData.data.map(data => (
