@@ -1,5 +1,5 @@
 ---
-slug: "/blog/goodbye2020_hello2021"
+slug: "/goodbye2020_hello2021"
 createdAt: "2020-12-29"
 updatedAt: "2020-12-29"
 title: "2020年の振り返りと2021年の目標"

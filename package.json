@@ -32,7 +32,6 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "fmt": "prettier --write \"**/*.{js,jsx,ts,tsx,css,json,md}\"",
-    "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"

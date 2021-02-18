@@ -1,5 +1,5 @@
 ---
-slug: "/blog/useful_tools_2020"
+slug: "/useful_tools_2020"
 createdAt: "2021-01-01"
 updatedAt: "2021-01-01"
 title: "2020年に使い始めたツールたち"
