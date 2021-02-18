@@ -1,5 +1,5 @@
 ---
-slug: "/blog/c-compiler1"
+slug: "/c-compiler1"
 createdAt: "2019-06-27"
 updatedAt: "2019-06-29"
 title: "Cコンパイラを自作する その1"

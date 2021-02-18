@@ -1,5 +1,5 @@
 ---
-slug: "/blog/became-atcoder-green"
+slug: "/became-atcoder-green"
 createdAt: "2019-10-28"
 updatedAt: "2019-10-28"
 title: "AtCoderで緑になりました"
