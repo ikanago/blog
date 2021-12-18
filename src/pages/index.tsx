@@ -9,21 +9,21 @@ import {getAllPosts} from "../lib/blog";
 
 export const getStaticProps = () => {
     const posts = getAllPosts();
-
     return {
         props: {
             posts,
         },
     };
-}
-const IndexPage = () => {
+};
+
+const IndexPage = ({posts}: {props: Post[]}) => {
     return (
         <Layout>
             <>
                 <SEO title="ikanago's blog" />
                 <div>
                     {/* <Biography /> */}
-                    {/* <Articles /> */}
+                    <Articles posts={posts} />
                     <Works />
                 </div>
             </>

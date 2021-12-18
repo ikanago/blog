@@ -5,18 +5,30 @@ import { parseISO, format } from "date-fns";
 
 const postsDirectory = join(process.cwd(), "src", "markdown-pages");
 
-export const getPostBySlug = (slug: string) => {
+export const getPostBySlug = (slug: string): Post => {
     const realSlug = slug.replace(/\.md$/, "");
     const fullPath = join(postsDirectory, `${realSlug}.md`);
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
-    console.error(data);
-    const date = format(parseISO(data.createdAt), "yyyy-MMMM-dd");
+    const createdAt = format(parseISO(data.createdAt), "yyyy-MMMM-dd");
+    const updatedAt = format(parseISO(data.updatedAt), "yyyy-MMMM-dd");
+    const isPublished = data.status == "published";
 
-    return { slug: realSlug, frontmatter: { ...data, date }, content };
+    return {
+        frontmatter: {
+            description: data.excerpt !== undefined ? data.excerpt : null,
+            slug: realSlug,
+            title: data.title,
+            createdAt,
+            updatedAt,
+            tags: data.tags,
+            isPublished,
+        },
+        content,
+    };
 };
 
-export const getAllPosts = () => {
+export const getAllPosts = (): Post[] => {
     const slugs = fs.readdirSync(postsDirectory);
     const posts = slugs.map(slug => getPostBySlug(slug));
 

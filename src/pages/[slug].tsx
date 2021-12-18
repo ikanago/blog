@@ -1,10 +1,7 @@
 import React from "react";
-import Link from "next/link";
-
-// import Bio from "../components/Biography";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
-import {markdownToHtml} from "../lib/markdown";
+import { markdownToHtml } from "../lib/markdown";
 import { getPostBySlug, getAllPosts } from "../lib/blog";
 
 export async function getStaticProps({ params }) {
@@ -26,7 +23,7 @@ export async function getStaticPaths() {
         paths: posts.map(post => {
             return {
                 params: {
-                    slug: post.slug,
+                    slug: post.frontmatter.slug,
                 },
             };
         }),
@@ -34,31 +31,29 @@ export async function getStaticPaths() {
     };
 }
 
-const BlogPost = post => {
+const BlogPost = (post: Post) => {
     return (
         <Layout>
             <>
                 <SEO
                     title={post.frontmatter.title}
-                    description={post.frontmatter.description || post.excerpt}
+                    description={post.frontmatter.description}
                 />
                 <article
-                    className="blog-post"
+                    className="blogPost"
                     itemScope
                     itemType="http://schema.org/Article"
                 >
-                    <header>
-                        <h1 itemProp="headline">{post.frontmatter.title}</h1>
-                        <p>{post.frontmatter.date}</p>
-                    </header>
-                    <section
-                        dangerouslySetInnerHTML={{ __html: post.content }}
-                        itemProp="articleBody"
-                    />
-                    <hr />
-                    {/* <footer>
-                        <Bio />
-                    </footer> */}
+                    <h1>{post.frontmatter.title}</h1>
+                    <h4 className="date">
+                        Created at {post.frontmatter.createdAt}
+                    </h4>
+                    <h4 className="date">
+                        Updated at {post.frontmatter.updatedAt}
+                    </h4>
+                    <div className="blogPost">
+                        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                    </div>
                 </article>
             </>
         </Layout>

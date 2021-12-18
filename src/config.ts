@@ -19,7 +19,7 @@ const config: Config = {
     description: `ikanago's portfolio and blog.`,
     social: {
         twitter: `@ikanag0`,
-    }
+    },
 };
 
 export default config;

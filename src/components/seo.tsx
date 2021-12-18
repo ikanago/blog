@@ -1,11 +1,11 @@
 import React from "react";
-import config, {Config} from "../config";
+import config, { Config } from "../config";
 import Head from "next/head";
 
 type Proptype = {
     description?: string;
     title: string;
-}
+};
 
 export const SEO = ({ description, title }: Proptype) => {
     const metaDescription = description || config.description;
