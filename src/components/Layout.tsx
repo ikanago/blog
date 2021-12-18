@@ -1,29 +1,21 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import { Header } from "./Header";
-import "./layout.css";
+import config from "../config";
+// import "./layout.module.css";
 
 type Props = {
     children: JSX.Element;
 };
 
-export const Layout = ({ children }: Props) => {
-    const data = useStaticQuery(graphql`
-        query SiteTitleQuery {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `);
-
+const Layout = ({ children }: Props) => {
     return (
         <>
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <Header siteTitle={config.title} />
             <div style={{}}>
                 <main>{children}</main>
             </div>
         </>
     );
 };
+
+export default Layout;
