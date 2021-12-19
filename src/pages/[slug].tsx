@@ -52,7 +52,9 @@ const BlogPost = (post: Post) => {
                         Updated at {post.frontmatter.updatedAt}
                     </h4>
                     <div className="blogPost">
-                        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                        <div
+                            dangerouslySetInnerHTML={{ __html: post.content }}
+                        />
                     </div>
                 </article>
             </>
