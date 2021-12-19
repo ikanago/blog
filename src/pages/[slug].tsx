@@ -1,17 +1,22 @@
 import React from "react";
+import Image from "next/image";
+import ReactMarkdown from "react-markdown"
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
-import { markdownToHtml } from "../lib/markdown";
 import { getPostBySlug, getAllPosts } from "../lib/blog";
 
-export async function getStaticProps({ params }) {
+type Params = {
+    params: {
+        slug: string;
+    }
+};
+
+export async function getStaticProps({ params }: Params) {
     const post = getPostBySlug(params.slug);
-    const content = await markdownToHtml(post.content || "");
 
     return {
         props: {
             ...post,
-            content,
         },
     };
 }
@@ -30,6 +35,23 @@ export async function getStaticPaths() {
         fallback: false,
     };
 }
+
+type ImageProps = JSX.IntrinsicElements["img"];
+
+const MarkdownImage = (props: ImageProps): JSX.Element => {
+    return (
+        <Image
+            {...props}
+            alt={props.alt}
+            src={require(`../images/${props.src}`)}
+            placeholder="blur"
+        />
+    );
+};
+
+const components = {
+    img: MarkdownImage,
+};
 
 const BlogPost = (post: Post) => {
     return (
@@ -51,11 +73,12 @@ const BlogPost = (post: Post) => {
                     <h4 className="date">
                         Updated at {post.frontmatter.updatedAt}
                     </h4>
-                    <div className="blogPost">
-                        <div
-                            dangerouslySetInnerHTML={{ __html: post.content }}
-                        />
-                    </div>
+                    <ReactMarkdown
+                        className="blogPost"
+                        components={components}
+                    >
+                        {post.content}
+                    </ReactMarkdown>
                 </article>
             </>
         </Layout>

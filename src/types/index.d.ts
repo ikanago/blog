@@ -1,3 +1,6 @@
+declare module "*.jpg";
+declare module "*.png";
+
 type Post = {
     frontmatter: FrontMatter;
     content: string;
