@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import Link from "next/link";
 
 type Props = {
     siteTitle: string;
@@ -19,16 +19,17 @@ export const Header = ({ siteTitle }: Props) => (
             }}
         >
             <h1 style={{ margin: 0 }}>
-                <Link
-                    to="/"
-                    style={{
-                        fontFamily: `"SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+                <Link href="/">
+                    <a
+                        style={{
+                            fontFamily: `"SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
                         "Liberation Mono", Menlo, Courier, monospace`,
-                        color: `white`,
-                        textDecoration: `none`,
-                    }}
-                >
-                    {siteTitle}
+                            color: `white`,
+                            textDecoration: `none`,
+                        }}
+                    >
+                        {siteTitle}
+                    </a>
                 </Link>
             </h1>
         </div>

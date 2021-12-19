@@ -7,7 +7,7 @@ tags: ["comp-prog"]
 status: "published"
 ---
 
-![rate graph](../images/20191028001138.png)
+![rate graph](20191028001138.png)
 
 <b>このエントリは 6/16 までに下書きの大部分が書かれています．なんでや!!!</b>
 

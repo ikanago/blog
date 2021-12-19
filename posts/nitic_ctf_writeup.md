@@ -1,7 +1,7 @@
 ---
 slug: "/nitic_ctf_writeup"
-createdAt: 2020-07-19
-updatedAt: 2020-07-19
+createdAt: "2020-07-19"
+updatedAt: "2020-07-19"
 title: "NICIT CTF Writeup"
 tags: ["CTF"]
 status: "published"
@@ -26,7 +26,7 @@ flag: Microsoft PowerPoint 2007+
 
 PowerPoint らしいです．無理矢理開きます．すると青い背景に何も書かれていないテキストボックスが配置されています．
 
-![Powerpoint](../images/20200719133633.jpg)
+![Powerpoint](20200719133633.jpg)
 
 背景色をいじったりしてもなにも見えなかったので詰まってしまいましたが，ふとサイドバーを見ると星マークがついています．  
 これはこのスライドがアニメーションを含むということなのでアニメーションを再生してみました．  
