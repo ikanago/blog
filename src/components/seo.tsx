@@ -1,5 +1,5 @@
 import React from "react";
-import config, { Config } from "../config";
+import config from "../config";
 import Head from "next/head";
 
 type Proptype = {
