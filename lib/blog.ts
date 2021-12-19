@@ -3,7 +3,7 @@ import { join } from "path";
 import matter from "gray-matter";
 import { parseISO, format } from "date-fns";
 
-const postsDirectory = join(process.cwd(), "src", "markdown-pages");
+const postsDirectory = join(process.cwd(), "posts");
 
 export const getPostBySlug = (slug: string): Post => {
     const realSlug = slug.replace(/\.md$/, "");

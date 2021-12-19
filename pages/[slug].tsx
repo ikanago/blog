@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown"
+import ReactMarkdown from "react-markdown";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 import { getPostBySlug, getAllPosts } from "../lib/blog";
@@ -8,7 +8,7 @@ import { getPostBySlug, getAllPosts } from "../lib/blog";
 type Params = {
     params: {
         slug: string;
-    }
+    };
 };
 
 export async function getStaticProps({ params }: Params) {
@@ -73,10 +73,7 @@ const BlogPost = (post: Post) => {
                     <h4 className="date">
                         Updated at {post.frontmatter.updatedAt}
                     </h4>
-                    <ReactMarkdown
-                        className="blogPost"
-                        components={components}
-                    >
+                    <ReactMarkdown className="blogPost" components={components}>
                         {post.content}
                     </ReactMarkdown>
                 </article>
