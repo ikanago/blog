@@ -14,8 +14,9 @@ export const Biography = () => {
                 <p className={styles.description}>
                     Studying computer science at a university. I love Rust 🦀.
                 </p>
-                {badgeData.data.map(data => (
+                {badgeData.data.map((data, i) => (
                     <Badge
+                        key={i}
                         link={data.link}
                         badgeLink={data.badgeLink}
                         title={data.title}

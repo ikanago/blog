@@ -1,5 +1,5 @@
 import React from "react";
-import { Tag } from "./Tag";
+import {Tag} from "./Tag";
 const styles = require("./container.module.css");
 
 export type CardContent = {
@@ -23,8 +23,8 @@ export const Card = (content: CardContent) => {
     );
     const tags = (
         <div className={styles.tags}>
-            {content.tags.map(tag_name => (
-                <Tag tag_name={tag_name} />
+            {content.tags.map((tag_name, i) => (
+                <Tag key={i} tag_name={tag_name} />
             ))}
         </div>
     );

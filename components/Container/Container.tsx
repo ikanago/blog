@@ -13,8 +13,9 @@ export const Container = ({
     sectionName,
     contents,
 }: Props) => {
-    const cards = contents.map(content => (
+    const cards = contents.map((content, i) => (
         <Card
+            key={i}
             title={content.title}
             description={content.description}
             tags={content.tags}
