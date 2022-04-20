@@ -10,7 +10,7 @@
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-markdown": "8.0.2"
+    "react-markdown": "8.0.3"
   },
   "devDependencies": {
     "@types/mdast": "3.0.10",
