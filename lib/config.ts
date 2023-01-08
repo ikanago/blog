@@ -1,5 +1,6 @@
 export type Config = {
     title: string;
+    hostname: string;
     author: {
         name: string;
         summary: string;
@@ -12,11 +13,12 @@ export type Config = {
 
 const config: Config = {
     title: `ikanago's blog`,
+    hostname: "https://blog.ikanago.dev/",
     author: {
         name: `ikanago`,
         summary: `Student`,
     },
-    description: `ikanago's portfolio and blog.`,
+    description: `ikanago's blog`,
     social: {
         twitter: `@ikanag0`,
     },

@@ -17,6 +17,7 @@ export const SEO = ({description, title}: Proptype) => {
             <meta content={metaDescription} name="description" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={title} />
+            <meta property="og:image" content={`https://${config.hostname}/blog_icon.png`} />
             <meta property="og:description" content={metaDescription} />
             <meta property="og:site_name" content={defaultTitle} />
             <meta property="twitter:card" content="summary" />
