@@ -67,12 +67,12 @@ const BlogPost = (post: Post) => {
                     itemType="http://schema.org/Article"
                 >
                     <h1>{post.frontmatter.title}</h1>
-                    <h4 className="date">
+                    <p className="date">
                         Created at {post.frontmatter.createdAt}
-                    </h4>
-                    <h4 className="date">
+                    </p>
+                    <p className="date">
                         Updated at {post.frontmatter.updatedAt}
-                    </h4>
+                    </p>
                     <ReactMarkdown className="blogPost" components={components}>
                         {post.content}
                     </ReactMarkdown>

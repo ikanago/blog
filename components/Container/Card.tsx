@@ -15,7 +15,6 @@ export const Card = (content: CardContent) => {
         <a
             className={styles.title}
             href={content.link}
-            target="_blank"
             rel="noopener noreferrer"
         >
             <h2>{content.title}</h2>
