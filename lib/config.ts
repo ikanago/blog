@@ -13,7 +13,7 @@ export type Config = {
 
 const config: Config = {
     title: `ikanago's blog`,
-    hostname: "https://blog.ikanago.dev/",
+    hostname: "blog.ikanago.dev",
     author: {
         name: `ikanago`,
         summary: `Student`,
