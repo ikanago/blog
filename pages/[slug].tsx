@@ -62,7 +62,7 @@ const BlogPost = (post: Post) => {
                     description={post.frontmatter.description}
                 />
                 <article
-                    className="blogPost"
+                    className="blogPostContainer"
                     itemScope
                     itemType="http://schema.org/Article"
                 >
