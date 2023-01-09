@@ -7,10 +7,7 @@ type Props = {
     contents: CardContent[];
 };
 
-export const Container = ({
-    sectionName,
-    contents,
-}: Props) => {
+export const Container = ({ sectionName, contents }: Props) => {
     const cards = contents.map((content, i) => (
         <Card
             key={i}
@@ -22,9 +19,7 @@ export const Container = ({
         />
     ));
     return (
-        <section
-            className={styles.container}
-        >
+        <section className={styles.container}>
             <h2 className={styles.section_name}>{sectionName}</h2>
             <div className={styles.cards}>{cards}</div>
         </section>

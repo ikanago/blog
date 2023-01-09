@@ -7,7 +7,12 @@ const styles = require("./biography.module.css");
 export const Biography = () => {
     return (
         <div className={styles.biography_container}>
-            <Image alt="ikanago" src="/blog_icon.png" width={400} height={400} />
+            <Image
+                alt="ikanago"
+                src="/blog_icon.png"
+                width={400}
+                height={400}
+            />
             <div className={styles.biography}>
                 <h1>ikanago</h1>
                 <p className={styles.description}>

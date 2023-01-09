@@ -29,12 +29,15 @@ export const getPostBySlug = (slug: string): Post => {
 
 export const getAllPosts = (): Post[] => {
     const slugs = fs.readdirSync(postsDirectory);
-    const posts = slugs.map(slug => getPostBySlug(slug)).filter(post => post.frontmatter.isPublished);
+    const posts = slugs
+        .map(slug => getPostBySlug(slug))
+        .filter(post => post.frontmatter.isPublished);
     posts.sort((x, y) => {
         if (x.frontmatter.updatedAt < y.frontmatter.updatedAt) {
             // Return value of compare function is inverted because we want to sort in decending order.
             return 1;
-        } if (x.frontmatter.updatedAt > y.frontmatter.updatedAt) {
+        }
+        if (x.frontmatter.updatedAt > y.frontmatter.updatedAt) {
             return -1;
         }
         return 0;

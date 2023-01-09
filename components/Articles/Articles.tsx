@@ -15,10 +15,5 @@ export const Articles = ({ posts }: Props) => {
             link: post.frontmatter.slug,
         };
     });
-    return (
-        <Container
-            sectionName="Articles"
-            contents={frontMatters}
-        />
-    );
+    return <Container sectionName="Articles" contents={frontMatters} />;
 };

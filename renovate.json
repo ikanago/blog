@@ -9,15 +9,15 @@
             "automerge": true
         },
         {
-          "matchDepTypes": ["dependencies"],
-          "matchUpdateTypes": ["minor", "patch"],
-          "matchCurrentVersion": "!/^0/",
-          "automerge": true
+            "matchDepTypes": ["dependencies"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "matchCurrentVersion": "!/^0/",
+            "automerge": true
         }
     ],
     "lockFileMaintenance": {
-      "enabled": true,
-      "automerge": true
+        "enabled": true,
+        "automerge": true
     },
     "automergeType": "branch"
 }
