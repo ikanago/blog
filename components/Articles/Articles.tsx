@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "../Container";
-const styles = require("./articles.module.css");
 
 type Props = {
     posts: Post[];
@@ -18,7 +17,6 @@ export const Articles = ({ posts }: Props) => {
     });
     return (
         <Container
-            backgroundColor="#F6F6F6"
             sectionName="Articles"
             contents={frontMatters}
         />

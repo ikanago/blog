@@ -6,11 +6,7 @@ type Props = {
 };
 
 export const Header = ({siteTitle}: Props) => (
-    <header
-        style={{
-            background: `#2cad27`,
-        }}
-    >
+    <header>
         <div
             style={{
                 margin: `0 auto`,

@@ -1,13 +1,12 @@
 ---
 slug: "/goodbye2022_hello2023"
-createdAt: "2022-01-08"
-updatedAt: "2022-01-08"
+createdAt: "2023-01-08"
+updatedAt: "2023-01-08"
 title: "2022年の振り返り"
 tags: ["poem"]
 status: "published"
 ---
 
-# 2022年の振り返り
 2022年頭初の目標:
 - 院試突破: ヨシ
 - 絵描くのを続ける: 夏くらいで飽きた

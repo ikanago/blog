@@ -53,6 +53,9 @@ progress {
 template {
     display: none;
 }
+header {
+    background-color: #2cad27;
+}
 a {
     font-family: "Noto Sans", "Noto Sans JP";
     background-color: transparent;
@@ -74,11 +77,6 @@ strong {
 }
 dfn {
     font-style: italic;
-}
-h1 {
-    text-align: center;
-    font-size: 2em;
-    margin: 0.67em 0;
 }
 mark {
     background-color: #ff0;
@@ -207,9 +205,8 @@ textarea {
     box-sizing: inherit;
 }
 main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    width: 50%;
+    margin: 0 auto;
 }
 article {
     width: 80%;
@@ -229,10 +226,11 @@ p:has(img) {
     padding: 2rem 0;
 }
 h1 {
-    margin-bottom: 1.5rem;
+    margin: 0.67rem 0 1.5rem;
     color: inherit;
     font-weight: bold;
     text-rendering: optimizeLegibility;
+    text-align: center;
     font-size: 2.25rem;
     line-height: 1.1;
 }
@@ -245,7 +243,7 @@ h2 {
     line-height: 1.1;
 }
 h3 {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     color: inherit;
     font-weight: bold;
@@ -301,7 +299,7 @@ dd {
     margin-bottom: 1.45rem;
 }
 p {
-    margin-bottom: 0.45rem;
+    margin: 0.2rem 0;
 }
 figure {
     margin-bottom: 1.45rem;
@@ -460,9 +458,23 @@ pre tt:before,
 pre tt:after {
     content: "";
 }
+@media screen and (max-width: 1080px) {
+    main {
+        width: 80%;
+    }
+    .blogPostContainer {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 3rem 0;
+    }
+}
 @media only screen and (max-width: 480px) {
     html {
         font-size: 12px;
+    }
+    main {
+        width: 90%;
     }
 }
 .blogPostContainer {
@@ -499,13 +511,4 @@ pre tt:after {
 }
 
 .blogPost ul {
-}
-
-@media screen and (max-width: 760px) {
-    .blogPostContainer {
-        display: block;
-        margin: 0 auto;
-        max-width: 80%;
-        padding: 3rem 0;
-    }
 }
