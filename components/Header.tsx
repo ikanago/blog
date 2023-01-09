@@ -5,12 +5,8 @@ type Props = {
     siteTitle: string;
 };
 
-export const Header = ({siteTitle}: Props) => (
-    <header
-        style={{
-            background: `#2cad27`,
-        }}
-    >
+export const Header = ({ siteTitle }: Props) => (
+    <header>
         <div
             style={{
                 margin: `0 auto`,
@@ -18,7 +14,7 @@ export const Header = ({siteTitle}: Props) => (
                 padding: `1.45rem 1.0875rem`,
             }}
         >
-            <h1 style={{margin: 0}}>
+            <h1 style={{ margin: 0 }}>
                 <Link href="/">
                     <a
                         style={{

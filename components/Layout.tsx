@@ -1,7 +1,6 @@
 import React from "react";
 import { Header } from "./Header";
 import config from "../lib/config";
-// import "./layout.module.css";
 
 type Props = {
     children: JSX.Element;
