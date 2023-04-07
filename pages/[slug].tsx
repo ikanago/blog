@@ -41,10 +41,10 @@ type ImageProps = JSX.IntrinsicElements["img"];
 const MarkdownImage = (props: ImageProps): JSX.Element => {
     return (
         <Image
-            {...props}
-            alt={props.alt}
+            alt={props.alt ?? ""}
             src={require(`../images/${props.src}`)}
             placeholder="blur"
+            style={{ objectFit: "contain" }}
         />
     );
 };
