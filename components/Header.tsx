@@ -15,17 +15,15 @@ export const Header = ({ siteTitle }: Props) => (
             }}
         >
             <h1 style={{ margin: 0 }}>
-                <Link href="/">
-                    <a
-                        style={{
-                            fontFamily: `"SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+                <Link href="/"
+                    style={{
+                        fontFamily: `"SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
                         "Liberation Mono", Menlo, Courier, monospace`,
-                            color: `white`,
-                            textDecoration: `none`,
-                        }}
-                    >
-                        {siteTitle}
-                    </a>
+                        color: `white`,
+                        textDecoration: `none`,
+                    }}
+                >
+                    {siteTitle}
                 </Link>
             </h1>
         </div>
