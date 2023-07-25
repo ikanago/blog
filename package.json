@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@types/mdast": "4.0.0",
-    "@types/node": "18.17.0",
+    "@types/node": "18.17.1",
     "@types/react": "18.2.16",
     "prettier": "3.0.0",
     "typescript": "5.1.6"
