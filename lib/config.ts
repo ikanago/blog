@@ -1,27 +1,27 @@
 export type Config = {
-    title: string;
-    hostname: string;
-    author: {
-        name: string;
-        summary: string;
-    };
-    description: string;
-    social: {
-        twitter: string;
-    };
+  title: string;
+  hostname: string;
+  author: {
+    name: string;
+    summary: string;
+  };
+  description: string;
+  social: {
+    twitter: string;
+  };
 };
 
 const config: Config = {
-    title: `ikanago's blog`,
-    hostname: "blog.ikanago.dev",
-    author: {
-        name: `ikanago`,
-        summary: `Student`,
-    },
-    description: `ikanago's blog`,
-    social: {
-        twitter: `@ikanag0`,
-    },
+  title: `ikanago's blog`,
+  hostname: "blog.ikanago.dev",
+  author: {
+    name: `ikanago`,
+    summary: `Student`,
+  },
+  description: `ikanago's blog`,
+  social: {
+    twitter: `@ikanag0`,
+  },
 };
 
 export default config;

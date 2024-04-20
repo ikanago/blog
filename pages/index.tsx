@@ -7,30 +7,30 @@ import { Articles } from "../components/Articles";
 import { getAllPosts } from "../lib/blog";
 
 type Props = {
-    props: {
-        posts: Post[];
-    };
+  props: {
+    posts: Post[];
+  };
 };
 
 export const getStaticProps = (): Props => {
-    const posts = getAllPosts();
-    return {
-        props: { posts },
-    };
+  const posts = getAllPosts();
+  return {
+    props: { posts },
+  };
 };
 
 const IndexPage = ({ posts }: Props["props"]): JSX.Element => {
-    return (
-        <Layout>
-            <>
-                <SEO title="ikanago's blog" />
-                <div>
-                    <Biography />
-                    <Articles posts={posts} />
-                </div>
-            </>
-        </Layout>
-    );
+  return (
+    <Layout>
+      <>
+        <SEO title="ikanago's blog" />
+        <div>
+          <Biography />
+          <Articles posts={posts} />
+        </div>
+      </>
+    </Layout>
+  );
 };
 
 export default IndexPage;
