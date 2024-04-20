@@ -16,7 +16,7 @@
     "@types/mdast": "4.0.0",
     "@types/node": "20.12.7",
     "@types/react": "18.2.20",
-    "prettier": "3.0.1",
+    "prettier": "3.2.5",
     "typescript": "5.1.6"
   },
   "license": "MIT",
