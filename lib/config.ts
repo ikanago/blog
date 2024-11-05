@@ -12,15 +12,15 @@ export type Config = {
 };
 
 const config: Config = {
-  title: `ikanago's blog`,
+  title: "ごきげんまっすぐ",
   hostname: "blog.ikanago.dev",
   author: {
-    name: `ikanago`,
-    summary: `Student`,
+    name: "ikanago",
+    summary: "Student",
   },
   description: `ikanago's blog`,
   social: {
-    twitter: `@ikanag0`,
+    twitter: "@ikanag0",
   },
 };
 

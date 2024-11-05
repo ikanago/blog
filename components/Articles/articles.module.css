@@ -1,5 +1,10 @@
-.article_container {
-    text-align: center;
+.section {
+    padding: 1rem;
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .articles {
@@ -9,12 +14,19 @@
     padding: 0 2rem;
 }
 
-.article_card {
-    border: 0.1rem solid #d1d5da;
-    border-radius: 0.3rem;
-    margin: 1rem 1rem;
-    padding: 1rem 1.5rem;
-    width: 45%;
-    height: 12rem;
-    text-align: center;
+.article {
+    overflow: hidden;
+    border-top: 0.1rem solid white;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.article:hover {
+    /* box-shadow: 0 0.5rem rgb(105 105 105 / 30%); */
+    background-color: #3c3a42;
+    transition: 0.2s;
+}
+
+.date {
+    text-align: right;
 }

@@ -1,32 +1,24 @@
 import React from "react";
 import Link from "next/link";
+const styles = require("./header.module.css");
 
-type Props = {
-  siteTitle: string;
-};
-
-export const Header = ({ siteTitle }: Props) => (
-  <header>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          href="/"
-          style={{
-            fontFamily: `"SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-                        "Liberation Mono", Menlo, Courier, monospace`,
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+export const Header = () => (
+  <header className={styles.header}>
+    <div className={styles.header_inner}>
+      <nav>
+        <ul className={styles.ul}>
+          <li className={styles.li}>
+            <Link href="/" className={styles.link}>
+              Home
+            </Link>
+          </li>
+          <li className={styles.li}>
+            <Link href="/about" className={styles.link}>
+              About
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div >
+  </header >
 );

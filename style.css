@@ -10,7 +10,7 @@ html {
 }
 body {
     margin: 0;
-    color: hsla(0, 0%, 0%, 0.8);
+    color: var(--text-color);
     background-color: var(--background);
     font-weight: normal;
     word-wrap: break-word;
@@ -54,11 +54,12 @@ template {
     display: none;
 }
 header {
-    background-color: #2cad27;
+    background-color: var(--background);
 }
 a {
-    font-family: "Noto Sans", "Noto Sans JP";
     background-color: transparent;
+    color: var(--text-color);
+    text-decoration: none;
     -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -105,7 +106,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, monospace;
+    font-family: monospace;
     font-size: 1em;
 }
 figure {
@@ -201,12 +202,6 @@ main {
     width: 50%;
     margin: 0 auto;
 }
-article {
-    width: 80%;
-    padding: 3rem 1rem;
-    border-radius: 1rem;
-    background-color: var(--article-background);
-}
 img {
     max-width: 100%;
     margin-bottom: 0.3rem;
@@ -238,7 +233,7 @@ h2 {
 h3 {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: inherit;
+    /* color: inherit; */
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.38316rem;

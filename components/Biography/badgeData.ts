@@ -25,19 +25,5 @@ export const badgeData: Props = {
       title: "ikanag0",
       alt: "Link to ikanago's Twitter.",
     },
-    {
-      link: "https://atcoder.jp/users/ikanago",
-      badgeLink:
-        "https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fikanago",
-      title: "ikanago",
-      alt: "Link to ikanago's AtCoder Profile page.",
-    },
-    {
-      link: "https://ejje.weblio.jp/content/struggle",
-      badgeLink:
-        "https://img.shields.io/badge/Always-struggling-red?style=flat",
-      title: "😵",
-      alt: "Indicates I'm always struggling.",
-    },
   ],
 };

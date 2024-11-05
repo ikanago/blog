@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Biography } from "../components/Biography";
 import Layout from "../components/Layout";
 import { SEO } from "../components/seo";
 import { Articles } from "../components/Articles";
 import { getAllPosts } from "../lib/blog";
+import config from "../lib/config";
 
 type Props = {
   props: {
@@ -24,12 +24,14 @@ const IndexPage = ({ posts }: Props["props"]): JSX.Element => {
     <Layout>
       <>
         <SEO title="ikanago's blog" />
-        <div>
-          <Biography />
+        <div style={{
+          paddingTop: "2rem"
+        }}>
+          <h1>{config.title}</h1>
           <Articles posts={posts} />
         </div>
       </>
-    </Layout>
+    </Layout >
   );
 };
 

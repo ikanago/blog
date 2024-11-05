@@ -2,6 +2,7 @@
     --font-ui: "Noto Sans JP", -apple-system, BlinkMacSystemFont, Segoe UI,
         Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
         sans-serif;
-    --background: #eeeeee;
-    --article-background: #ffffff;
+    --background: #211f26;
+    --article-background: #211f26;
+    --text-color: #e0e0e0;
 }
