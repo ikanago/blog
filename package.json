@@ -13,7 +13,7 @@
     "sharp": "^0.33.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.5",
+    "@biomejs/biome": "2.0.6",
     "@types/mdast": "4.0.4",
     "@types/node": "22.15.33",
     "@types/react": "18.3.23",
