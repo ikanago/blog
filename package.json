@@ -16,7 +16,7 @@
     "@biomejs/biome": "2.2.5",
     "@types/mdast": "4.0.4",
     "@types/node": "22.17.1",
-    "@types/react": "18.3.25",
+    "@types/react": "18.3.26",
     "typescript": "5.9.3"
   },
   "license": "MIT",
