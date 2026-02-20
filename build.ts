@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import { marked, Renderer } from "marked";
 
@@ -271,7 +272,7 @@ function build404Page() {
 }
 
 // メイン処理
-function build() {
+export function build() {
   console.log("Building...");
 
   resetDist();
@@ -290,4 +291,6 @@ function build() {
   console.log("Done!");
 }
 
-build();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  build();
+}

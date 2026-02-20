@@ -17,7 +17,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsx build.ts",
-    "dev": "tsx watch build.ts",
+    "dev": "tsx dev.ts",
     "fmt": "npx @biomejs/biome format --write ."
   },
   "repository": {
