@@ -6,25 +6,19 @@
   "author": "ikanago <ikanago-dev@protonmail.com>",
   "dependencies": {
     "gray-matter": "4.0.3",
-    "next": "13.5.6",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-markdown": "9.1.0",
-    "sharp": "^0.33.0"
+    "marked": "^15.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.3",
-    "@types/mdast": "4.0.4",
     "@types/node": "22.19.11",
-    "@types/react": "18.3.28",
+    "tsx": "^4.0.0",
     "typescript": "5.9.3"
   },
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "fmt": "npx @biomejs/biome format --write ./{components,lib,pages,pages}"
+    "build": "tsx build.ts",
+    "dev": "tsx watch build.ts",
+    "fmt": "npx @biomejs/biome format --write ."
   },
   "repository": {
     "type": "git",

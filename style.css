@@ -497,3 +497,77 @@ pre tt:after {
 .blogPost pre {
     margin-left: 3rem;
 }
+
+/* Header */
+.header {
+    border-bottom: solid #423f4a;
+}
+
+.header_inner {
+    margin: 0 auto;
+    width: 50%;
+    padding: 1.45rem 0;
+}
+
+.header_ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header_li {
+    margin: 0 1rem;
+}
+
+.header_link {
+    color: #eee;
+    text-decoration: none;
+}
+
+/* Articles */
+.articles_section {
+    padding: 1rem;
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    overflow: hidden;
+    border-top: 0.1rem solid white;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.article:hover {
+    background-color: #3c3a42;
+    transition: 0.2s;
+}
+
+.article_date {
+    text-align: right;
+}
+
+/* Biography */
+.biography_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.biography {
+    margin: 1rem;
+}
+
+.biography_description {
+    margin: 0.5rem 0.3rem;
+}
+
+.badge {
+    margin: 0 0.3rem;
+}
