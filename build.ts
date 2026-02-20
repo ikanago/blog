@@ -53,11 +53,11 @@ function copyDir(src: string, dest: string) {
 function copyAssets() {
   fs.copyFileSync(
     path.join(process.cwd(), "style.css"),
-    path.join(DIST_DIR, "style.css")
+    path.join(DIST_DIR, "style.css"),
   );
   fs.copyFileSync(
     path.join(process.cwd(), "variables.css"),
-    path.join(DIST_DIR, "variables.css")
+    path.join(DIST_DIR, "variables.css"),
   );
   copyDir(PUBLIC_DIR, DIST_DIR);
   copyDir(IMAGES_DIR, path.join(DIST_DIR, "images"));
@@ -91,9 +91,7 @@ function loadPost(filename: string): Post {
 // 全記事を取得
 function getAllPosts(): Post[] {
   const files = fs.readdirSync(POSTS_DIR).filter((f) => f.endsWith(".md"));
-  const posts = files
-    .map(loadPost)
-    .filter((p) => p.frontmatter.isPublished);
+  const posts = files.map(loadPost).filter((p) => p.frontmatter.isPublished);
 
   posts.sort((a, b) => {
     if (a.frontmatter.updatedAt < b.frontmatter.updatedAt) return 1;
@@ -170,7 +168,7 @@ function buildIndexPage(posts: Post[]) {
         <h3>${escapeHtml(post.frontmatter.title)}</h3>
         ${post.frontmatter.createdAt ? `<p class="article_date">${escapeHtml(post.frontmatter.createdAt)}</p>` : ""}
       </article>
-    </a>`
+    </a>`,
     )
     .join("\n");
 
@@ -203,7 +201,10 @@ function buildPostPage(post: Post) {
 
   const slugDir = path.join(DIST_DIR, frontmatter.slug);
   fs.mkdirSync(slugDir, { recursive: true });
-  fs.writeFileSync(path.join(slugDir, "index.html"), layout(frontmatter.title, body));
+  fs.writeFileSync(
+    path.join(slugDir, "index.html"),
+    layout(frontmatter.title, body),
+  );
   console.log(`Generated: dist/${frontmatter.slug}/index.html`);
 }
 
@@ -231,7 +232,7 @@ function buildAboutPage() {
       (b) =>
         `<a href="${escapeHtml(b.link)}" class="badge" rel="noopener noreferrer" target="_blank">
           <img src="${escapeHtml(b.badgeLink)}" alt="${escapeHtml(b.alt)}" title="${escapeHtml(b.title)}">
-        </a>`
+        </a>`,
     )
     .join("\n");
 
@@ -247,7 +248,10 @@ function buildAboutPage() {
 
   const aboutDir = path.join(DIST_DIR, "about");
   fs.mkdirSync(aboutDir, { recursive: true });
-  fs.writeFileSync(path.join(aboutDir, "index.html"), layout("About - " + TITLE, body));
+  fs.writeFileSync(
+    path.join(aboutDir, "index.html"),
+    layout("About - " + TITLE, body),
+  );
   console.log("Generated: dist/about/index.html");
 }
 
@@ -259,7 +263,10 @@ function build404Page() {
     <p>You just hit a route that doesn't exist... the sadness.</p>
   </div>`;
 
-  fs.writeFileSync(path.join(DIST_DIR, "404.html"), layout("404: Not found", body));
+  fs.writeFileSync(
+    path.join(DIST_DIR, "404.html"),
+    layout("404: Not found", body),
+  );
   console.log("Generated: dist/404.html");
 }
 
